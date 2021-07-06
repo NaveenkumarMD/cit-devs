@@ -1,0 +1,30 @@
+.dev-container {
+  background-color: #3c2536;
+  padding: 0;
+}
+
+.developers {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  height: auto;
+}
+
+.dev-text {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .developers {
+    padding: 2.3em 3em 3em;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .dev-text {
+    padding-top: 1em;
+  }
+}
