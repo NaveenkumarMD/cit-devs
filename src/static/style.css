@@ -6,10 +6,8 @@
 }
 .app{
     z-index: 0;
-    /* background: url("../images/background.jpg"); */
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,50,91,1) 100%);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: url("../images/background.jpg");
+    
     height: 100vh;
     background-size: cover;
     position: relative;
@@ -34,7 +32,7 @@ nav ul{
 }
 nav a{
     color: #ffff;
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin: 20px 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
@@ -66,8 +64,94 @@ nav a::before {
     
 
 }
+
 .mobile-nav h3{
     font-family: 'Otomanopee One', sans-serif;
+    
+}
+
+.mission-section{
+    background-color: #3C2536;
+    color: wheat;
+    padding-top: 2%;
+}
+.mission-section header{
+    font-family: 'Poppins';
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+}
+.dots{
+    font-size: 3rem;
+    text-align: center;
+    color: #CBCCCC;
+}
+.mission-1{
+    display: flex;
+    align-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+}
+.mission-2{
+   
+    display: flex;
+    align-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+}
+.m1-img:hover{
+    filter: brightness(1.1);
+}
+.mission-section p{
+    width: 50%;
+    font-size: 1.2rem;
+    letter-spacing: 1.3px;
+    margin: 0 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contact-us{
+    background-color: #010104;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:30px 10px;
+}
+.contact-us h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.contact-us p{
+    font-family: 'Poppins';
+    margin-top: 10px;
+}
+.icon{
+
+    margin: 5px;
+}
+.contact-details{
+    display: flex;
+
+}
+.contact-card{
+   
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    cursor: pointer;
+    box-sizing: unset;
+    border:1px solid black;
+}
+.contact-card:hover{
+    border: 1px solid rgb(63, 27, 223);
 }
 
 @keyframes line{
@@ -93,5 +177,24 @@ nav a::before {
         right: 0;
        top: 0;
     }
-    
+    .mission-1{
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0;
+        justify-content: center;
+    }
+    .mission-2{
+        display: flex;
+        align-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0;
+        justify-content: center;
+    }
+    .mission-section p{
+        width: auto;
+        margin: 20px;
+    }
 }
