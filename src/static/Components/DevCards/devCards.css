@@ -1,0 +1,65 @@
+.card-container {
+  width: 13em;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  --webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 2em;
+  padding-left: 3.5em;
+  margin: 2em;
+  text-align: center;
+  height: auto;
+}
+
+.profile-img {
+  height: 50%;
+  width: 50%;
+}
+
+.card-container::before {
+  height: 100%;
+  width: 2rem;
+  position: absolute;
+  content: "";
+  background: linear-gradient(#fc87da 5%, #cb94ef 60%);
+  left: 0;
+  top: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card-img {
+  margin: 0.5em;
+}
+
+.card-title {
+  margin-bottom: 0.5em;
+}
+
+.github,
+.linkedin {
+  height: 30px;
+  width: 30px;
+  margin: 0.5em;
+}
+
+@media screen and (min-width: 600px) {
+  .card-container {
+    margin: 1em;
+    padding-bottom: 0.5em;
+    transition: all 200ms;
+  }
+  .card-container:hover {
+    transform: scale(1.07);
+  }
+
+  .profile-img {
+    height: 60%;
+    width: 60%;
+  }
+  .card-title {
+    margin-top: 1em;
+  }
+}
